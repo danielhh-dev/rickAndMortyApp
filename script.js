@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = character.image;
         characterCard.appendChild(img);
 
+        const name = document.createElement("h2");
+        name.textContent = character.name;
+        characterCard.appendChild(name);
+
+        const species = document.createElement("p");
+        species.textContent = character.species;
+        characterCard.appendChild(species);
+
         characterCards.appendChild(characterCard);
       });
     })
